@@ -37,6 +37,32 @@ body {
     
 }
 
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
 /*Navbar*/
 .navbar {
     position: fixed;
@@ -106,14 +132,12 @@ body {
     position: relative;
     display: flex;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     justify-content: space-around;
     align-items: center;
     align-content: flex-end;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100%;
-    height: 90vh;
 }
 
 .AMtext {
@@ -123,18 +147,110 @@ body {
     text-align: center;
 }
 
-.AMtext h1 {
+#AMtext {
+    padding-bottom: 25px;
+    border-bottom: 3px solid var(--text);
+}
+
+#AMtext h1 {
     font-size: 50px;
     color: var(--text);
     font-weight: 800;
 }
 
-.AMtext p {
+#AMtext p {
     font-size: 25px;
     color: var(--text);
     font-weight: 350;
 }
 
-.AMtext span.boldtxt {
+#AMtext span.boldtxt {
     font-weight: 600;
+}
+
+
+/*Contact*/
+#contact {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--text-hover);
+}
+.Clinks {
+    text-decoration: none;
+    color: #e3e1e1;
+    border-bottom: 2px solid white;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.linksContainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    border: 3px soild white;
+    transform: translateX(50%);
+}
+.Ctext {
+    font-family: var(--font);
+    color: #e3e1e1;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 35px;
+}
+
+#email h1 {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#mailicon {
+    font-size: 30px;
+    transform: translateY(7px);
+    margin-right: 10px;
+}
+
+.twitter {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: var(--font);
+    color: #e3e1e1;
+}
+
+#twittericon {
+    width: 40px;
+    height: auto;
+    transform: translateY(10px);
+    margin-right: 10px;
+}
+
+.youtube {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: var(--font);
+    color: #e3e1e1;
+}
+
+#youtubeicon {
+    width: 35px;
+    height: auto;
+    transform: translateY(4px);
+    margin-right: 10px;
+}
+
+#discordicon {
+    width: 35px;
+    height: auto;
+    transform: translateY(10px);
+    margin-right: 10px;
+}
+
+#discord h1 {
+    font-size: 25px;
+    font-family: var(--font);
+    color: #e3e1e1;
+    font-weight: 400;
 }

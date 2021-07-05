@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal Website">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Title and Icon-->
     <title>Slogllykop</title>
     <link rel="icon" href="/favicon.ico">
@@ -21,7 +22,7 @@
             <ul class="navItems">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#">Krunker</a></li>
             </ul>
         </div>
@@ -29,8 +30,9 @@
     <div class="banner" id="home"></div>
     <div id="aboutMe">
         <div class="AMtext">
-            <h1>Hey, I'm Indraneel</h1>
-            <p>I am a 18yr old living in
+            <div id="AMtext">
+               <h1>Hey, I'm Indraneel</h1>
+               <p>I am a 18yr old living in
                <span class="boldtxt">Pune, India.</span> </br>
                I am
                <span class="boldtxt">Graphic Designer/Video Editor</span> 
@@ -44,9 +46,31 @@
                but my friends call me 
                <span class="boldtxt">Slog.</span>              
             </p>
+            </div>
         </div>
-        
     </div>
-
+    <div id="contact">
+        <div class="Ctext">
+            <h1>You can contact me here</h1>
+        </div>
+        <div class="linksContainer">
+            <div class="Clinks" id="email">
+                <h1><span class="material-icons" id="mailicon">mail_outline</span>slogllykop07@gmail.com</h1>
+            </div>
+            <div class="Clinks" id="discord">
+                <h1><img id="discordicon" src="/img/discord.png" alt="">Slog#444</h1>
+            </div>
+            <div class="Clinks" id="twitter">
+                <a href="https://twitter.com/_Slogllykop_" target="_blank" class="twitter">
+                    <img id="twittericon" src="/img/twitter.png" alt="">_Slogllykop_
+                </a>
+            </div>
+            <div class="Clinks" id="youtube">
+                <a href="https://www.youtube.com/channel/UC39NbdwLx4Z9GTIrnhxKE3Q" target="_blank" class="youtube"> 
+                    <img id="youtubeicon" src="/img/youtube.png" alt="">Slogllykop
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
