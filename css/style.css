@@ -1,8 +1,140 @@
-:root {
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@700&display=swap');
 
+
+
+/*Variables*/
+:root {
+    --navfont: 'Khand', Arial, Helvetica, sans-serif;
+    --font: 'Poppins', Arial, Helvetica, sans-serif;
+    --accent: #009aff;
+    --text: #2f5073;
+    --text-hover: #18293b;
 }
 
+
+/*MISC*/
 * {
     margin: 0%;
     padding: 0%;
+}
+
+::selection {
+    background-color: #2f5073;
+    color: #e3e1e1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e3e1e1;
+}
+
+::-webkit-scrollbar {
+    
+}
+
+/*Navbar*/
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70px;
+    z-index: 2;
+    background-color: #e3e1e1;
+}
+
+/*nav left*/
+.logo {
+    width: 50px;
+    height: auto;
+    margin-left: 10%;
+    cursor: pointer;
+    fill: var(--text);
+}
+.navLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*nav right*/
+.navItems {
+    list-style: none;
+}
+
+.navItems li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navItems li a {
+    text-decoration: none;
+    color: var(--text);
+    font-family: var(--font);
+    transition: all .3s ease 0s;
+    font-weight: 500;
+}
+
+.navItems li a:hover {
+    color: var(--text-hover);
+    border-bottom: 3px solid var(--text-hover);
+}
+
+
+/*Home*/
+.banner {
+    background-image: url(/img/Background.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*About me*/
+#aboutMe {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+}
+
+.AMtext {
+    width: 65%;
+    height: 80%;
+    font-family: var(--font);
+    text-align: center;
+}
+
+.AMtext h1 {
+    font-size: 50px;
+    color: var(--text);
+    font-weight: 800;
+}
+
+.AMtext p {
+    font-size: 25px;
+    color: var(--text);
+    font-weight: 350;
+}
+
+.AMtext span.boldtxt {
+    font-weight: 600;
 }
