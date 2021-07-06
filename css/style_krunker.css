@@ -1,0 +1,142 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@700&display=swap');
+
+
+
+/*Variables*/
+:root {
+    --navfont: 'Khand', Arial, Helvetica, sans-serif;
+    --font: 'Poppins', Arial, Helvetica, sans-serif;
+    --accent: #009aff;
+    --text: #2f5073;
+    --text-hover: #18293b;
+}
+
+
+/*MISC*/
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+::selection {
+    background-color: #2f5073;
+    color: #e3e1e1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e3e1e1;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e3e1e1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text);
+    border-radius: 32px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-hover);
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+/*Navbar*/
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70px;
+    z-index: 2;
+    background-color: #e3e1e1;
+}
+
+/*nav left*/
+.logo {
+    width: 50px;
+    height: auto;
+    margin-left: 10%;
+    cursor: pointer;
+    fill: var(--text);
+    user-select: none;
+}
+.navLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLeft h1 {
+    font-family: var(--navfont);
+    font-size: 35px;
+    color: var(--text);
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3px;
+    user-select: none;
+    cursor: pointer;
+}
+
+/*nav right*/
+.navItems {
+    list-style: none;
+}
+
+.navItems li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navItems li a {
+    text-decoration: none;
+    color: var(--text);
+    font-family: var(--font);
+    transition: all .3s ease 0s;
+    font-weight: 500;
+    user-select: none;
+}
+
+.navItems li a:hover {
+    color: var(--text-hover);
+    border-bottom: 3px solid var(--text-hover);
+}
