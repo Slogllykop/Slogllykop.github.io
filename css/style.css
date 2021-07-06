@@ -160,6 +160,9 @@ body {
     border-radius: 32px;
     
 }
+.Kbutton:hover {
+    color: var(--text) !important;
+}
 
 .Kbutton:hover::after {
     transform: translate(-3px, -3px);
