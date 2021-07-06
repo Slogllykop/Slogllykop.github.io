@@ -92,6 +92,15 @@ body {
     justify-content: center;
 }
 
+.navLeft h1 {
+    font-family: var(--navfont);
+    font-size: 35px;
+    color: var(--text);
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+
 /*nav right*/
 .navItems {
     list-style: none;
