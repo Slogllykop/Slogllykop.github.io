@@ -142,11 +142,32 @@ body {
 }
 
 .Kbutton {
-    border: 2px solid var(--text);
-    padding: 5px;
-    border-radius: 32px;
+    position: relative;
+    border-bottom: none !important;
+    padding: 10px;
 }
 
+.Kbutton::after, .Kbutton::before {
+    content: '';
+    position: absolute;
+    border: 3px solid var(--text);
+    width: 90%;
+    height: 90%;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    transition: transform .3s ease;
+    border-radius: 32px;
+    
+}
+
+.Kbutton:hover::after {
+    transform: translate(-3px, -3px);
+}
+
+.Kbutton:hover::before {
+    transform: translate(3px, 3px);
+}
 
 /*Home*/
 .banner {

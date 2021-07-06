@@ -140,3 +140,112 @@ body {
     color: var(--text-hover);
     border-bottom: 3px solid var(--text-hover);
 }
+
+
+/*Krunke Portfolio Home*/
+.KrunkePortfolio {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    flex-direction: column;
+    user-select: none;
+} 
+
+.KrunkePortfolio::before {
+    content: " ";
+    position: absolute;
+    background-image: url(/img/krunker_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: .1;
+}
+
+.KPHbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.KPtext {
+    font-family: var(--font);
+    font-weight: 800;
+    color: var(--text);
+    font-size: 50px;
+}
+
+.KPsubtext {
+    font-family: var(--font);
+    font-weight: 300;
+    color: var(--text);
+    font-size: 30px;
+}
+
+.KPHbuttons a {
+    text-decoration: none;
+    font-family: var(--font);
+    color: var(--text);
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.GFX{
+    margin-right: 4em;
+    position: relative;
+    padding: 5px 40px;
+}
+
+.GFX::after, .GFX::before {
+    content: " ";
+    position: absolute;
+    border: 3px solid var(--text);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    transition: transform .3s ease;
+    border-radius: 32px;
+}
+
+.GFX:hover::after {
+    transform: translate(5px, 5px);
+}
+
+.GFX:hover::before {
+    transform: translate(-5px, -5px);
+}
+
+.CSS {
+    margin-left: 4em;
+    position: relative;
+    padding: 5px 40px;
+}
+
+.CSS::after, .CSS::before {
+    content: " ";
+    position: absolute;
+    border: 3px solid var(--text);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    transition: transform .3s ease;
+    border-radius: 32px;
+}
+
+.CSS:hover::after {
+    transform: translate(5px, -5px) !important;
+}
+
+.CSS:hover::before {
+    transform: translate(-5px, 5px);
+}
