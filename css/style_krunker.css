@@ -249,3 +249,112 @@ body {
 .CSS:hover::before {
     transform: translate(-5px, 5px);
 }
+
+
+/*GFX*/
+#GFXarea {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--text);
+}
+
+.GFXtext {
+    font-family: var(--font);
+    color: #e3e1e1;
+    font-size: 65px;
+}
+
+.GFXitems {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.GFXthumb {
+    width: 500px;
+    height: auto;
+    border-bottom: 10px solid var(--text-hover);
+    border-left: 5px solid var(--text-hover); 
+    border-right: 5px solid var(--text-hover);
+}
+
+#GFXlightbox1 {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: transform .15s ease-in-out;
+}
+
+#GFXlightbox1:target {
+    transform: scale(1,1);
+}
+
+.GFXclose {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, .1);
+    top: 15.5%;
+    right: 17%;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GFXclose::after {
+    content: "X";
+    font-family: var(--font);
+    color: #e3e1e1;
+    font-weight: 900;
+}
+
+#GFXlightbox2 {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+    transform: scale(0,1);
+    transform-origin: right;
+    transition: transform .15s ease-in-out;
+}
+
+#GFXlightbox2:target {
+    transform: scale(1,1);
+}
+
+#GFXlightbox2 img {
+    width: 853px;
+    height: auto;
+}
+
+.GFXimg1 {
+    margin-right: 5%;
+}
+
+.GFXimg2 {
+    margin-left: 5%;
+}
